@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  background: white;
+}
+
+/* Infinite smooth scroll */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #555;
+  transform: scale(0.7);
+}
+
+.animate-scroll {
+  animation: scroll 69s linear infinite;
+}
+
+.animate-scroll:hover {
+  animation-play-state: paused;
+}
